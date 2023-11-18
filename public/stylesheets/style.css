@@ -1,8 +1,104 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* border: 1px solid red; */
+}
+
 body {
+  width: 100%;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #333;
+  text-decoration: none;
+}
+
+button {
+  width: 80px;
+  margin: 0 auto;
+  padding: 0.5rem 0.75rem;
+  display: grid;
+  place-content: center;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.nav-btn {
+  width: min-content;
+  margin: 1rem auto;
+}
+
+.messages {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.message {
+  margin-bottom: 1rem;
+  background-color: #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.message:last-child {
+  margin-bottom: 0;
+}
+
+.message-header {
+  /* width: 100%; */
+  display: flex;
+  gap: 2rem;
+}
+
+.message-user,
+.message-added {
+}
+
+.message-text {
+  /* padding: 0 1rem; */
+}
+
+.form {
+  width: min(90vw, 500px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input {
+  padding: 0.25rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+textarea {
+  height: 80px;
+  padding: 0.25rem;
 }
